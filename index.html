@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab11</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+      #info {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        z-index: 100;
+        display: block;
+        color: white;
+      }
+      #info p {
+        margin: 0;
+      }
+      .buttons {
+        position: absolute;
+        top: 10px;
+        left: 35%;
+        z-index: 100;
+        display: block;
+        color: white;
+        text-align: center;
+      }
+      .buttons button {
+        width: 25px;
+        height: 25px;
+      }
+    </style>
+    <script src="three.js" defer></script>
+    <script src="OrbitControls.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="info">
+      <p>Sterowanie:</p>
+      <p>Poruszanie sześcianem (Strzałki)</p>
+      <br />
+      <p>Poruszanie kamerą (Strzałki z wciśniętym klawiszem alt)</p>
+      <br />
+      <p>Rotacja kamery wokół sześcianów</p>
+      <p>(Przytrzymanie lewego przycisku myszy i poruszanie nią)</p>
+      <p>(Pokrętło powoduje przyblizenie lub oddalenie kamery od obiektów)</p>
+    </div>
+    <div class="buttons">
+    </p>Te przyciski pozwalają na wybór sześcianu którym sterujemy</p>
+      <button id="button-0">1</button>
+      <button id="button-1">2</button>
+      <button id="button-2">3</button><br>
+      <button id="button-3">4</button>
+      <button  id="button-4">5</button>
+    </div>
+  </body>
+</html>
